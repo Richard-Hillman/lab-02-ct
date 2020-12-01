@@ -1,7 +1,7 @@
 const { getName } = require('./name');
 
 // describe('triangulation', () => {
-//     it('gets name out of object', () => {
+//     it('triangulation', () => {
 //         const name = getName('method');
 
 //         expect(name).toEqual('spot')
@@ -10,9 +10,9 @@ const { getName } = require('./name');
     // -----------------------------------------
 describe('getName', () => {
     it('takes an object and returns the name', () => {
-        const spot = { name: 'spot', age: 5, weight: '20 lbs' };
+        const spot = [{ name: 'spot', age: 5, weight: '20 lbs' }];
     
-        const name = getName(spot);
+        const name = getName({ name: 'spot', age: 5, weight: '20 lbs' });
 
         expect(name).toEqual('spot');
     })
