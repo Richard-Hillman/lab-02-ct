@@ -1,5 +1,4 @@
-const getName = (spot) => {
-    const { name, age, weight } = spot
+const getName = ({name, age, weight}) => {
     return name;
 };
 
