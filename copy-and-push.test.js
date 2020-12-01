@@ -10,12 +10,18 @@ const { copyPush } = require('./copy-and-push');
     //     })
 
     describe('copyPush', () => {
+        const numbers = [1, 2, 3];
+
         it('copy array and push new ', () => {
-            const numbers = [1, 2, 3];
             const newArr = copyPush(numbers, 4);
         
             expect(newArr).toEqual([1, 2, 3, 4]);
-        })
+        });
+
+        it('makes sure original array is same same', () => {
+            expect(numbers)
+                .toEqual([1, 2, 3])
+        });
 
     });
 
@@ -25,7 +31,7 @@ const { copyPush } = require('./copy-and-push');
 // green, commit
 
 // oops we were supposed to return a copy
-
 // add another test that makes sure that the original array is unchanged
+
 // update code, use spread to copy and append
 // green, commit
