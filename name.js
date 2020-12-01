@@ -1,5 +1,5 @@
 const getName = (spot) => {
-    return spot['name']
+    return spot.name
 };
 
 module.exports = {
