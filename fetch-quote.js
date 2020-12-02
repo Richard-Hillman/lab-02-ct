@@ -3,8 +3,8 @@
 const request = require('superagent');
 
 const fetchQuote = async() => {
-    const { body } = await request.get('http://futuramaapi.herokuapp.com/api/quotes/1');
-    const results = body[0];
+    const { body } = await request.get('http://futuramaapi.herokuapp.com/api/quotes');
+    const results = body[4];
 
     const quote = 
         {
