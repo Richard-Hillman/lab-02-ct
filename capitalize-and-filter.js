@@ -3,13 +3,9 @@
 // ['spot', 'rover', 'bingo', 'fred'] -> ['SPOT', 'ROVER', 'BINGO']
 
 const capFil = (array) => {
-    const newArray = []
-    for(let i= 0; i < array.length; i++) {
-        if(array[i].charAt(0) !== 'f') {
-            newArray[newArray.length] = array[i].toUpperCase();
-        }
-    };
-    return newArray;
+   return array 
+    .filter((item) => item.charAt(0) !== 'f')
+    .map((item) => item.toUpperCase())
 };
 
 
